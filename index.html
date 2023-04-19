@@ -1,0 +1,31 @@
+---
+title: "Extremophile Adaptation to Toxic Heavy Metals in Cochlearia Pyrenaica"
+author: "Yash Bhagat"
+date: "2023-04-19"
+output: html_document
+---
+
+# Three populations analysed: ‘LAB’ Langdon Beck, ‘NENT’ River Nent and ‘ODN’ Odin’s mine.
+# Two Sections to this project: 1- Demographic Analyses for an overview of the population relationships. 2- Selection Scans to detect any genes exhibiting natural selection.
+
+# Demographic Analyses:
+File used = reheadered_4dg_dips.clean_BI.ann.vcf
+Three different scripts used for running this analysis:
+1) Adgenet Script which produces a Principal Component Analysis of the three populations involved in this project.
+2) Splitree Script which gives a rooted tree decribing the evolutionary relationships between the three populations.
+3) FastStructure Script presentating another view at infering the population structures.
+
+# Selection Scans:
+File used = LAB_NEN_ODN.clean_BI.ann.vcf.gz
+Two different approaches used for running the scans:
+1) Python Approach which uses 5 different scripts from G1 to G5 to calculate the FST values of all populations and plot them against each other.
+2) Scantools Approach which uses three different scripts - recode012.py, sian_bpm.py and Sian_sort_for_Scantools.py to create a file consisting of the populations along with their FST and AFD values. This file is then used in Rstudio to plot the FST values.
+
+Scripts used for Demographic Analysis:
+1. Adgenet Script.R 
+2. Splittree Script.R
+3. faststructure.sh
+
+Scripts used for Selection Scans:
+1. Python - G1_outliers.py, G2_genes.py, G3_graphs.py, G3_graphs_percentile.py and G5_classes.py
+2. Scantools - recode012.py, sian_bpm.py and Sian_sort_for_ScanTools.py
