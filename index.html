@@ -1,5 +1,5 @@
 ---
-title: "Extremophile Adaptation to Toxic Heavy Metals in Cochlearia Pyrenaica"
+title: "Detection of selective sweeps for Adaptation to Toxic Heavy Metals in different populations of Cochlearia Pyrenaica"
 author: "Yash Bhagat"
 date: "2023-04-19"
 output: html_document
@@ -18,7 +18,7 @@ Three different scripts used for running this analysis:
 # Selection Scans:
 File used = LAB_NEN_ODN.clean_BI.ann.vcf.gz
 Two different approaches used for running the scans:
-1) Python Approach which uses 5 different scripts from G1 to G5 to calculate the FST values of all populations and plot them against each other.
+1) Python Approach which uses 5 different scripts from G1 to GS to calculate the FST, DXY, DD and AFD values of all populations and plot them against each other.
 2) Scantools Approach which uses three different scripts - recode012.py, sian_bpm.py and Sian_sort_for_Scantools.py to create a file consisting of the populations along with their FST, DXY and AFD values. This file is then used in Rstudio with FST_DXY_Plot R Script to plot the FST and DXY values.
 
 Scripts used for Demographic Analysis:
@@ -27,5 +27,5 @@ Scripts used for Demographic Analysis:
 3. faststructure.sh
 
 Scripts used for Selection Scans:
-1. Python - G1_outliers.py, G2_genes.py, G3_graphs.py, G3_graphs_percentile.py and G5_classes.py
+1. Python - G1_outliers.py, G2_genes.py, G3_graphs.py, G3_graphs_percentile.py and GS_classes.py
 2. Scantools - recode012.py, sian_bpm.py and Sian_sort_for_ScanTools.py
